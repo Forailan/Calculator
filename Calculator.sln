@@ -7,11 +7,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Web", "Calculato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Web.Tests", "Calculator.Web.Tests\Calculator.Web.Tests.csproj", "{CA42C1C8-1CFA-4B47-B9C2-F43B58EE2B99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Core", "Calculator.Core\Calculator.Core.csproj", "{68C51AD7-9EE4-4485-93E8-D30B181FA18D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Data", "Calculator.Data\Calculator.Data.csproj", "{248808C4-A1A2-4303-BB3E-57EF7FAAE576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator.Core", "Calculator.Core\Calculator.Core.csproj", "{68C51AD7-9EE4-4485-93E8-D30B181FA18D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{EFE07BE8-8836-4DDB-997D-E4BCBB8B6338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBScripts", "DBScripts", "{5EC6AEE7-9B77-49BB-BEC1-800F53D049F1}"
+	ProjectSection(SolutionItems) = preProject
+		DBScripts\CreteTablesQuery.sql = DBScripts\CreteTablesQuery.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.DataContext", "Calculator.DataContext\Calculator.DataContext.csproj", "{C1DB555A-67C0-424C-9862-DA0A2F0655B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Data", "Calculator.Data\Calculator.Data.csproj", "{23345F03-AD7E-4C66-9E9B-6CD8CC8B7232}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Abstractions", "Calculator.Abstractions\Calculator.Abstractions.csproj", "{8349014F-F56B-45F4-AACB-900BAA874239}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +40,18 @@ Global
 		{68C51AD7-9EE4-4485-93E8-D30B181FA18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68C51AD7-9EE4-4485-93E8-D30B181FA18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68C51AD7-9EE4-4485-93E8-D30B181FA18D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{248808C4-A1A2-4303-BB3E-57EF7FAAE576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{248808C4-A1A2-4303-BB3E-57EF7FAAE576}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{248808C4-A1A2-4303-BB3E-57EF7FAAE576}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{248808C4-A1A2-4303-BB3E-57EF7FAAE576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1DB555A-67C0-424C-9862-DA0A2F0655B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1DB555A-67C0-424C-9862-DA0A2F0655B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1DB555A-67C0-424C-9862-DA0A2F0655B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1DB555A-67C0-424C-9862-DA0A2F0655B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23345F03-AD7E-4C66-9E9B-6CD8CC8B7232}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23345F03-AD7E-4C66-9E9B-6CD8CC8B7232}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23345F03-AD7E-4C66-9E9B-6CD8CC8B7232}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23345F03-AD7E-4C66-9E9B-6CD8CC8B7232}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8349014F-F56B-45F4-AACB-900BAA874239}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8349014F-F56B-45F4-AACB-900BAA874239}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8349014F-F56B-45F4-AACB-900BAA874239}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8349014F-F56B-45F4-AACB-900BAA874239}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
